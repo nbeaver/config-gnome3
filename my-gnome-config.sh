@@ -10,3 +10,6 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 gsettings set org.gnome.desktop.sound event-sounds false
 # https://help.ubuntu.com/stable/ubuntu-help/sound-alert.html
 # https://askubuntu.com/questions/25531/how-to-disable-alert-volume-from-the-command-line#178480
+
+gsettings set org.gnome.desktop.interface enable-animations false
+# https://askubuntu.com/questions/99874/how-do-i-turn-off-gnome-shell-activities-animations#348670
