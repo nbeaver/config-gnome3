@@ -19,3 +19,6 @@ gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward "['<Shift
 gsettings set org.gnome.desktop.wm.keybindings switch-applications "[]"
 gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward "[]"
 # https://superuser.com/questions/394376/how-to-prevent-gnome-shells-alttab-from-grouping-windows-from-similar-apps
+
+gsettings set org.gnome.nautilus.preferences executable-text-activation ask
+# https://askubuntu.com/questions/286621/how-do-i-run-executable-scripts-in-nautilus
