@@ -3,6 +3,9 @@
 # Use 12-hour time (AM / PM) instead of 24-hour time.
 gsettings set org.gnome.desktop.interface clock-format 12h
 
+# Show the date on the clock.
+gsettings set org.gnome.desktop.interface clock-show-date true
+
 # Turn off cursor blinking.
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d \')/ cursor-blink-mode off
 # https://geoff.greer.fm/2016/08/26/gnome-terminal-cursor-blinking-saga/
@@ -22,3 +25,5 @@ gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward "[]"
 
 gsettings set org.gnome.nautilus.preferences executable-text-activation ask
 # https://askubuntu.com/questions/286621/how-do-i-run-executable-scripts-in-nautilus
+
+gsettings set org.gnome.desktop.search-providers disable-external true
