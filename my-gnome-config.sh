@@ -26,4 +26,24 @@ gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward "[]"
 gsettings set org.gnome.nautilus.preferences executable-text-activation ask
 # https://askubuntu.com/questions/286621/how-do-i-run-executable-scripts-in-nautilus
 
+# Disable external search providers
+# such as tracker, Calendar, Calculator, Characters, Boxes, Photos, Recipes, etc.
+# This way, queries look for applications only
+# and finish in a reasonable amount of time.
 gsettings set org.gnome.desktop.search-providers disable-external true
+# /usr/share/gnome-shell/search-providers
+# https://developer.gnome.org/SearchProvider/
+
+# Disable auto-opening of folders on drag-and-drop.
+gsettings set org.gnome.nautilus.preferences open-folder-on-dnd-hover false
+# https://bugzilla.gnome.org/show_bug.cgi?id=727790
+# https://bugzilla.gnome.org/show_bug.cgi?id=754455
+# http://askubuntu.com/questions/825834/how-can-i-disable-the-auto-opening-of-a-folder-when-using-drag-drop-in-nautilu
+
+# Let Evince use more RAM so it can zoom in more.
+gsettings set org.gnome.Evince page-cache-size 512
+# https://fransdejonge.com/2017/10/fix-minuscule-zoom-limit-in-evince/
+
+gsettings set org.gnome.eog.fullscreen seconds 0
+# Don't advance the slideshow in Eye of Gnome.
+# https://askubuntu.com/questions/197379/eog-how-to-control-delay-between-slides-in-a-slideshow-from-command-line
