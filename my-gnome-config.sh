@@ -44,6 +44,6 @@ gsettings set org.gnome.nautilus.preferences open-folder-on-dnd-hover false
 gsettings set org.gnome.Evince page-cache-size 512
 # https://fransdejonge.com/2017/10/fix-minuscule-zoom-limit-in-evince/
 
-gsettings set org.gnome.eog.fullscreen seconds 0
 # Don't advance the slideshow in Eye of Gnome.
+gsettings set org.gnome.eog.fullscreen seconds 0
 # https://askubuntu.com/questions/197379/eog-how-to-control-delay-between-slides-in-a-slideshow-from-command-line
