@@ -52,3 +52,6 @@ gsettings set org.gnome.eog.fullscreen seconds 0
 gsettings set org.freedesktop.Tracker.Miner.Files crawling-interval -2
 gsettings set org.freedesktop.Tracker.Miner.Files enable-monitors false
 # https://askubuntu.com/questions/346211/tracker-store-and-tracker-miner-fs-eating-up-my-cpu-on-every-startup
+
+# Use current directory for filechooser instead of recent files.
+gsettings set org.gtk.Settings.FileChooser startup-mode cwd
