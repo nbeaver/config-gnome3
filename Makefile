@@ -1,2 +1,2 @@
 all :
-	./my-gnome-config.sh
+	./config-gnome.sh
