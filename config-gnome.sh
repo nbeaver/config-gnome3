@@ -7,7 +7,8 @@ gsettings set org.gnome.desktop.interface clock-format 12h
 gsettings set org.gnome.desktop.interface clock-show-date true
 
 # Turn off cursor blinking.
-gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d \')/ cursor-blink-mode off
+uuid_default_gnome_terminal_profile=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d \')
+gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$uuid_default_gnome_terminal_profile/" cursor-blink-mode off
 # https://geoff.greer.fm/2016/08/26/gnome-terminal-cursor-blinking-saga/
 
 gsettings set org.gnome.desktop.sound event-sounds false
