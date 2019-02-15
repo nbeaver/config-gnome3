@@ -57,5 +57,5 @@ gsettings set org.freedesktop.Tracker.Miner.Files enable-monitors false
 gsettings set org.gtk.Settings.FileChooser startup-mode cwd
 
 # Disable tracking of recent files and applications.
-gsettings set org.gnome.desktop.privacy recember-app-usage false
-gsettings set org.gnome.desktop.privacy recember-recent-files false
+gsettings set org.gnome.desktop.privacy remember-app-usage false
+gsettings set org.gnome.desktop.privacy remember-recent-files false
