@@ -60,3 +60,9 @@ gsettings set org.gtk.Settings.FileChooser startup-mode cwd
 # Disable tracking of recent files and applications.
 gsettings set org.gnome.desktop.privacy remember-app-usage false
 gsettings set org.gnome.desktop.privacy remember-recent-files false
+
+# Enabled "Night Light" setting (like redshift).
+gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
+gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 2500
+# https://askubuntu.com/questions/1088650/gnome-night-light-setting-from-the-command-line
+# https://unix.stackexchange.com/questions/400025/activate-night-light-option-from-terminal
