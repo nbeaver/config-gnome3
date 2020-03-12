@@ -66,3 +66,8 @@ gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
 gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 2500
 # https://askubuntu.com/questions/1088650/gnome-night-light-setting-from-the-command-line
 # https://unix.stackexchange.com/questions/400025/activate-night-light-option-from-terminal
+
+# Turn off overlay scroll bars.
+# Requires gnome 3.34 or later.
+gsettings set org.gnome.desktop.interface overlay-scrolling false
+# https://www.linuxuprising.com/2019/09/how-to-disable-gnomes-overlay.html
