@@ -18,10 +18,13 @@ gsettings set org.gnome.desktop.sound event-sounds false
 gsettings set org.gnome.desktop.interface enable-animations false
 # https://askubuntu.com/questions/99874/how-do-i-turn-off-gnome-shell-activities-animations#348670
 
-gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<alt>Tab']"
-gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward "['<Shift><Alt>Tab', '<Alt>Above_Tab']"
-gsettings set org.gnome.desktop.wm.keybindings switch-applications "[]"
-gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward "[]"
+# Make Alt-Tab switch between windows.
+gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Alt>Tab']"
+gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward "['<Shift><Alt>Tab']"
+
+# Make Alt-` switch between windows of the same application.
+gsettings set org.gnome.desktop.wm.keybindings switch-group "['<Alt>Above_Tab']"
+gsettings set org.gnome.desktop.wm.keybindings switch-group-backward "['<Shift><Alt>Above_Tab']"
 # https://superuser.com/questions/394376/how-to-prevent-gnome-shells-alttab-from-grouping-windows-from-similar-apps
 
 gsettings set org.gnome.nautilus.preferences executable-text-activation ask
