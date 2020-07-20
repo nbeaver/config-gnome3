@@ -74,3 +74,8 @@ gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 25
 # Requires gnome 3.34 or later.
 gsettings set org.gnome.desktop.interface overlay-scrolling false
 # https://www.linuxuprising.com/2019/09/how-to-disable-gnomes-overlay.html
+
+# Show "Create Link" option on right-click menu.
+gsettings set org.gnome.nautilus.preferences show-create-link true
+# Rationale: sometimes useful to create symlinks graphically.
+# https://askubuntu.com/questions/843150/what-happened-to-the-nautilus-feature-create-link-in-ubuntu-16-10-and-newer
