@@ -81,3 +81,7 @@ gsettings set org.gnome.desktop.interface overlay-scrolling false
 gsettings set org.gnome.nautilus.preferences show-create-link true
 # Rationale: sometimes useful to create symlinks graphically.
 # https://askubuntu.com/questions/843150/what-happened-to-the-nautilus-feature-create-link-in-ubuntu-16-10-and-newer
+
+# Stop GNOME extension from capturing focus after login.
+gnome-extensions disable ding@rastersoft.com
+# https://www.reddit.com/r/pop_os/comments/q3dgu6/comment/hfsur49/?context=3#CommentTopMeta--Created--t1_hfsur49=
