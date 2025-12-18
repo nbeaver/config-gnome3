@@ -6,6 +6,9 @@ gsettings set org.gnome.desktop.interface clock-format 12h
 # Show the date on the clock.
 gsettings set org.gnome.desktop.interface clock-show-date true
 
+# Show the battery percentage.
+gsettings set org.gnome.desktop.interface show-battery-percentage true
+
 # Turn off cursor blinking.
 uuid_default_gnome_terminal_profile=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d \')
 gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$uuid_default_gnome_terminal_profile/" cursor-blink-mode off
