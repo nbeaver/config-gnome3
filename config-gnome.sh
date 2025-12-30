@@ -9,6 +9,11 @@ gsettings set org.gnome.desktop.interface clock-show-date true
 # Show the battery percentage.
 gsettings set org.gnome.desktop.interface show-battery-percentage true
 
+# Make Ctrl-Tab go to next tab and Ctrl-Shift-Tab go to previous tab.
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ next-tab '<Control>Tab'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ prev-tab '<Control><Shift>Tab'
+# https://askubuntu.com/questions/1362653/change-shortcut-to-switch-tab-in-gnome-terminal/1362715#1362715
+
 # Turn off cursor blinking.
 uuid_default_gnome_terminal_profile=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d \')
 gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$uuid_default_gnome_terminal_profile/" cursor-blink-mode off
