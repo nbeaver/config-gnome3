@@ -6,6 +6,9 @@ gsettings set org.gnome.desktop.interface clock-format 12h
 # Show the date on the clock.
 gsettings set org.gnome.desktop.interface clock-show-date true
 
+# Show the week day on the clock.
+gsettings set org.gnome.desktop.interface clock-show-weekday true
+
 # Show the battery percentage.
 gsettings set org.gnome.desktop.interface show-battery-percentage true
 
@@ -93,3 +96,9 @@ gsettings set org.gnome.nautilus.preferences show-create-link true
 # Stop GNOME extension from capturing focus after login.
 gnome-extensions disable ding@rastersoft.com
 # https://www.reddit.com/r/pop_os/comments/q3dgu6/comment/hfsur49/?context=3#CommentTopMeta--Created--t1_hfsur49=
+
+# Disable tap and drag.
+gsettings set org.gnome.desktop.peripherals.touchpad tap-and-drag false
+
+# Make new windows focused.
+gsettings set org.gnome.desktop.wm.preferences focus-new-windows 'smart'
