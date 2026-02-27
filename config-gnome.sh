@@ -102,3 +102,9 @@ gsettings set org.gnome.desktop.peripherals.touchpad tap-and-drag false
 
 # Make new windows focused.
 gsettings set org.gnome.desktop.wm.preferences focus-new-windows 'smart'
+
+# Set caps lock to additional Ctrl key and compose key to right Alt key.
+gsettings set org.gnome.desktop.input-sources xkb-options "['caps:ctrl_modifier', 'compose:ralt']"
+
+# Make sure development tools are enabled.
+gsettings set org.gnome.shell development-tools true
