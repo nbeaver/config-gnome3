@@ -40,9 +40,6 @@ gsettings set org.gnome.desktop.wm.keybindings switch-group "['<Alt>Above_Tab']"
 gsettings set org.gnome.desktop.wm.keybindings switch-group-backward "['<Shift><Alt>Above_Tab']"
 # https://superuser.com/questions/394376/how-to-prevent-gnome-shells-alttab-from-grouping-windows-from-similar-apps
 
-gsettings set org.gnome.nautilus.preferences executable-text-activation ask
-# https://askubuntu.com/questions/286621/how-do-i-run-executable-scripts-in-nautilus
-
 # Disable external search providers
 # such as tracker, Calendar, Calculator, Characters, Boxes, Photos, Recipes, etc.
 # This way, queries look for applications only
