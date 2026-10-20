@@ -105,3 +105,8 @@ gsettings set org.gnome.desktop.input-sources xkb-options "['caps:ctrl_modifier'
 
 # Make sure development tools are enabled.
 gsettings set org.gnome.shell development-tools true
+
+# Make sure that middle click pastes the primary selection.
+gsettings set org.gnome.desktop.interface gtk-enable-primary-paste true
+# https://discourse.gnome.org/t/please-retain-middle-click-paste/33477
+# https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas/-/merge_requests/119
